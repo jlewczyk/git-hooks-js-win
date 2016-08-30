@@ -1,10 +1,11 @@
 {
-  "name": "git-hooks",
-  "description": "A tool to manage project Git hooks",
-  "author": "Alexander Tarmolov <tarmolov@gmail.com>",
+  "name": "git-hooks-win",
+  "description": "A tool to manage project Git hooks under windows",
+  "author": "John Lewczyk <john.lewczyk@quadramed.com> and Alexander Tarmolov <tarmolov@gmail.com>",
   "version": "1.1.0",
-  "repository": "https://github.com/tarmolov/git-hooks-js",
+  "repository": "https://github.com/tarmolov/git-hooks-js-win",
   "contributors": [
+    "John Lewczyk <jlewczyk@quadramed.com>",
     "Alexander Tarmolov <tarmolov@gmail.com> (http://tarmolov.ru/)",
     "Denis Khananein <i@zloylos.me> (http://zloy.me/)",
     "Ikonnikov Konstantin"
@@ -13,6 +14,7 @@
     "git",
     "hooks",
     "hook",
+    "windows",
     "lint",
     "test",
     "development",
@@ -32,19 +34,19 @@
     "prepare-commit-msg"
   ],
   "bin": {
-    "git-hooks": "./bin/git-hooks"
+    "git-hooks-win": "./bin/git-hooks-win"
   },
   "engines": {
     "node": ">=0.8.x"
   },
   "engine-strict": true,
   "scripts": {
-    "postinstall": "git-hooks --install",
-    "preuninstall": "git-hooks --uninstall",
+    "postinstall": "git-hooks-win --install",
+    "preuninstall": "git-hooks-win --uninstall",
     "test": "jscs . && jshint . && mocha --reporter spec --recursive tests",
     "coverage": "istanbul cover _mocha --recursive tests"
   },
-  "main": "lib/git-hooks",
+  "main": "lib/git-hooks-win",
   "files": [
     "bin",
     "examples",
