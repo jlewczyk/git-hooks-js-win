@@ -1,5 +1,5 @@
 require('chai').should();
-var gitHooks = require('../lib/git-hooks');
+var gitHooks = require('../lib/git-hooks-win');
 var fsHelpers = require('../lib/fs-helpers');
 
 var SANDBOX_PATH = __dirname + '/tmp-sandbox/';
@@ -16,7 +16,7 @@ describe('--uninstall', function () {
         fsHelpers.removeDir(SANDBOX_PATH);
     });
 
-    describe('when git-hooks is not installed', function () {
+    describe('when git-hooks-win is not installed', function () {
         it('should show an error', function () {
             var fn = function () {
                 gitHooks.uninstall(SANDBOX_PATH);
@@ -38,7 +38,7 @@ describe('--uninstall', function () {
         });
     });
 
-    describe('when git-hooks is installed', function () {
+    describe('when git-hooks-win is installed', function () {
         beforeEach(function () {
             fsHelpers.makeDir(GIT_HOOKS);
         });

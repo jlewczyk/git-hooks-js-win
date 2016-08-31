@@ -1,6 +1,6 @@
 require('chai').should();
 var fs = require('fs');
-var gitHooks = require('../lib/git-hooks');
+var gitHooks = require('../lib/git-hooks-win');
 var fsHelpers = require('../lib/fs-helpers');
 
 var SANDBOX_PATH = __dirname + '/tmp-sandbox/';

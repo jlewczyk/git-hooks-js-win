@@ -1,5 +1,5 @@
 /node_modules/*
 /node_modules/.bin/*
-!/node_modules/.bin/git-hooks
+!/node_modules/.bin/git-hooks-win
 /coverage
 npm-debug.log

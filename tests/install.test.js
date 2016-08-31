@@ -1,5 +1,5 @@
 require('chai').should();
-var gitHooks = require('../lib/git-hooks');
+var gitHooks = require('../lib/git-hooks-win');
 var fsHelpers = require('../lib/fs-helpers');
 
 var SANDBOX_PATH = __dirname + '/tmp-sandbox/';
@@ -45,7 +45,7 @@ describe('--install', function () {
         });
     });
 
-    describe('when git-hooks is already installed', function () {
+    describe('when git-hooks-win is already installed', function () {
         beforeEach(function () {
             fsHelpers.makeDir(GIT_HOOKS_OLD);
         });
