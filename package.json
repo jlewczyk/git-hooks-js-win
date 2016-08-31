@@ -34,7 +34,7 @@
     "prepare-commit-msg"
   ],
   "bin": {
-    "git-hooks-win": "./bin/git-hooks"
+    "git-hooks": "./bin/git-hooks"
   },
   "engines": {
     "node": ">=0.8.x"
