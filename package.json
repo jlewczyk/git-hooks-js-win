@@ -2,7 +2,7 @@
   "name": "git-hooks-win",
   "description": "A tool to manage project Git hooks under windows",
   "author": "John Lewczyk <john.lewczyk@quadramed.com> and Alexander Tarmolov <tarmolov@gmail.com>",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "repository": "https://github.com/jlewczyk/git-hooks-js-win",
   "contributors": [
     "John Lewczyk <jlewczyk@quadramed.com>",
