@@ -33,17 +33,17 @@ npm install git-hooks-win --save-dev
 To keep things organized, `git-hooks-win` looks for scripts in sub-directories named after the git hook name.
 All these sub-directories should be stored in `.githooks` directory in the project root.
 
-Let's create some dummy pre-commit hook (bash)
+Let's create some dummy pre-commit hook (**bash**)
 ```bash
 mkdir -p .githooks/pre-commit
 echo -e '#!/usr/bin/env node' "\nconsole.log('hi!');" > .githooks/pre-commit/hello.js
 chmod +x .githooks/pre-commit/hello.js
 ```
 
-On Windows, one does not have any "execute" permissions on files, so just
+On **Windows**, one does not have any "execute" permissions on files, so just
 ```bash
-mkdir .githooks/commit-msg
-echo '#!/usr/bin/env node' "\nconsole.log('hi!');" > .githooks/pre-commit/hello.js
+mkdir .githooks\commit-msg
+echo !/usr/bin/env node >> .githooks\commit-msg\hello.js & echo console.log('hi!'); >> .githooks\commit-msg\hello.js
 ```
 
 Then just try to commit and see how things are rolling.
